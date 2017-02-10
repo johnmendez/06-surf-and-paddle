@@ -4,51 +4,121 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
+
 $c-text: #555;
 $c-header: #2b92dd;
 
-header {
-  background: $c-header;
+@import 'header';
+
+.main {
+
 }
 
-.navbar {
-  // display: flex;
-  // justify-content: space-between;
-  color: $c-text;
-  font-family: sans-serif;
-  text-transform: uppercase;
+.container {
+  max-width: 65rem;
+  margin: auto;
+}
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
 
+  // margin: -1rem;
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
+  &__item {
+    flex-shrink: 0;
+    margin: 1rem;
+    &--large{
+      flex-basis: calc(60% - 1rem);
 
-    &__img {
-      width: 6rem;
-      height: 6rem;
     }
-
-    &__left {
-      display: flex;
-      padding: 2rem;
+    &--small{
+      flex-basis: calc(30% - 1rem);
     }
   }
 }
 
-.link {
-  padding-right: 2rem;
+.article {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+  // flex-grow: 0;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:column;
-  min-height: 50vh;
+
+
+
+.left-article {
+  flex-basis: calc(60% / 2 -1rem -1rem);
+  background: green;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  padding: 1rem;
+  border-left: 0.1rem solid black;
+  margin-left: 1rem;
+}
+
+.avatar__pic {
+  border-radius: 50%;
+}
+
+.under-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.date {
+  margin-left: 1rem;
+}
+
+
+
+
+
+.right-article{
+
+  background: blue;
+
+  &__avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+    &__pic{
+      // max-width: 4rem;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__link-space {
+      margin: .5rem;
+    }
+  }
+}
+  &__ad {
+    // background: yellow;
+    // display: flex;
+    // flex-direction: column;
+    text-align: right;
+    // justify-content: flex-start;
+    margin: 0;
+  }
+}
+
+h3 {
+  margin: 0 auto;
+}
+
 
 @import 'box-sizing';
 @import 'reset';

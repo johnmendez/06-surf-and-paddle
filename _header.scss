@@ -1,0 +1,42 @@
+header {
+  background: $c-header;
+}
+
+.navbar {
+  // display: flex;
+  // justify-content: space-between;
+  color: $c-text;
+  font-family: sans-serif;
+  text-transform: uppercase;
+
+
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    &__img {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__left {
+      display: flex;
+      padding: 2rem;
+    }
+  }
+}
+
+.link {
+  padding-right: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  min-height: 50vh;
+}
