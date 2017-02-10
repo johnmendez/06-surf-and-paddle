@@ -1,16 +1,3 @@
-// @import 'yoga';
-// @import 'normalize';
-
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
-
-
-$c-text: #555;
-$c-header: #2b92dd;
-
-@import 'header';
-// @import 'body';
-
 
 
 .container {
@@ -49,6 +36,7 @@ $c-header: #2b92dd;
 
 .left-article {
   flex-basis: calc(60% / 2 -1rem -1rem);
+  background: green;
 }
 
 h1 {
@@ -80,6 +68,7 @@ h2 {
 
 .right-article{
 
+  background: blue;
 
   &__avatar {
   display: flex;
@@ -103,6 +92,7 @@ h2 {
   }
 }
   &__ad {
+    // background: yellow;
     // display: flex;
     // flex-direction: column;
     text-align: right;
@@ -114,52 +104,3 @@ h2 {
 h3 {
   margin: 0 auto;
 }
-
-// Footer
-
-.footer-header {
-text-align: center;
-}
-
-.section {
-  padding: 1rem;
-}
-
-.row {
-  display: flex;
-}
-
-.card{
-  position: relative;
-
-  &__tag {
-    position: absolute;
-    margin: 0;
-    bottom: 0;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3rem;
-
-  &__logo {
-    vertical-align: middle;
-  }
-
-  &__list {
-  display: flex;
-
-  &__item {
-    padding-left: 1rem;
-  }
-  }
-}
-
-
-
-@import 'box-sizing';
-@import 'reset';
