@@ -1,0 +1,49 @@
+// Footer
+
+.footer-header {
+text-align: center;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.img-list {
+  display: flex;
+
+  &__item {
+
+    width: 25%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+
+  &__logo {
+    vertical-align: middle;
+  }
+
+  &__list {
+  display: flex;
+
+  &__item {
+    padding-left: 1rem;
+  }
+  }
+}

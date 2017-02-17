@@ -36,7 +36,6 @@
 
 .left-article {
   flex-basis: calc(60% / 2 -1rem -1rem);
-  background: green;
 }
 
 h1 {
@@ -68,8 +67,6 @@ h2 {
 
 .right-article{
 
-  background: blue;
-
   &__avatar {
   display: flex;
   flex-direction: column;
@@ -92,7 +89,6 @@ h2 {
   }
 }
   &__ad {
-    // background: yellow;
     // display: flex;
     // flex-direction: column;
     text-align: right;
